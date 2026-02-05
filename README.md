@@ -302,11 +302,6 @@ Add-Migration [MigrationName] -Context LibraryIdentityContext
 Update-Database -Context LibraryIdentityContext
 ```
 
-### Viewing Database
-1. Open SQL Server Object Explorer (View → SQL Server Object Explorer)
-2. Expand LocalDB → Databases → Your Database
-3. Right-click tables → View Data / View Designer
-
 ## Course Information
 
 - **Institution**: FSEGA (Faculty of Economics and Business Administration)
