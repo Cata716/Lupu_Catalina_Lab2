@@ -31,6 +31,8 @@ namespace Lupu_Catalina_Lab2.Pages.Books
             var book = await _context.Book
                      .Include(b => b.Publisher)
                      .Include(b => b.Author)
+                     .Include(b => b.BookCategories)
+                     .ThenInclude(bc => bc.Category)
                      .FirstOrDefaultAsync(m => m.ID == id);
             if (book == null)
             {
